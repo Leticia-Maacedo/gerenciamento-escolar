@@ -1,4 +1,4 @@
-package gerenciamentoescolar.data.dao
+package com.example.gerenciamentoescolar.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
