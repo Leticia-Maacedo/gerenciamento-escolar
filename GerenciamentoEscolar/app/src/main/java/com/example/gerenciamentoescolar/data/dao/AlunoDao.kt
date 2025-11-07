@@ -1,11 +1,19 @@
-package gerenciamentoescolar.data.dao
+package com.example.gerenciamentoescolar.data.dao
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import androidx.room.vo.Dao
+import com.exampple.gerenciamentoescolar.data.entities.Aluno
 import gerenciamentoescolar.data.entities.Aluno
+
+private val room: Any
+    get() {
+        TODO()
+    }
 
 @Dao
 interface AlunoDao {
+
     @Insert
     suspend fun insert(aluno: Aluno)
 
