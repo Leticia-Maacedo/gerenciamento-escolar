@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.gerenciamentoescolar.ui.home.HomeFragment"
+        android:label="Início"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_escolas"
+        android:name="com.example.gerenciamentoescolar.ui.escolas.EscolasFragment"
+        android:label="Escolas"
+        tools:layout="@layout/fragment_escolas" />
+
+    <fragment
+        android:id="@+id/nav_alunos"
+        android:name="com.example.gerenciamentoescolar.ui.alunos.AlunosFragment"
+        android:label="Alunos"
+        tools:layout="@layout/fragment_alunos" />
+
+    <fragment
+        android:id="@+id/nav_equipes"
+        android:name="com.example.gerenciamentoescolar.ui.equipes.EquipesFragment"
+        android:label="Equipes"
+        tools:layout="@layout/fragment_equipes" />
+
+</navigation>
