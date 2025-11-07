@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textNome"
+            android:text="Nome da Equipe"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textDescricao"
+            android:text="Descrição"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/textEscola"
+            android:text="Escola"
+            android:textColor="#555"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:text="Editar"
+                android:textSize="12sp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnExcluir"
+                android:text="Excluir"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
